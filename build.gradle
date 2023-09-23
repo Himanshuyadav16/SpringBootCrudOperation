@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.springframework.boot', name: 'spring-boot', version: '2.6.6'
+    implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '3.0.0'
+    implementation group: 'io.springfox', name: 'springfox-swagger2', version: '3.0.0'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.28'
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.6.0'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.7.15'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.7.15'
+    implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.6.7'
+
+}
+
+test {
+    useJUnitPlatform()
+}
